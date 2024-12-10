@@ -14,3 +14,6 @@ add_executable(hash_with_byte_seed hash_with_byte_seed.cpp)
 add_executable(hash_with_any_seed hash_with_any_seed.cpp)
 add_executable(hash_32_64 hash_32_64.cpp)
 add_executable(xxh128_from_xxh64 xxh128_from_xxh64.cpp)
+
+add_executable(hash2_ossl_perf hash2_ossl_perf.cpp)
+target_link_libraries(hash2_ossl_perf PRIVATE ssl crypto)
